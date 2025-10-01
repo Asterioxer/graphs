@@ -1,4 +1,7 @@
 #include <bits/stdc++.h>
+#include <vector>
+using namespace std;
+
 class Solution {
     private:
       void bfs(int row, int col, vector<vector<int>>& vis, vector<vector<char>>& grid) {
@@ -27,6 +30,7 @@ class Solution {
       int numIsLands(vector<vector<char>>& grid) {
         int n = grid.size();
         int m = grid[0].size();
+        int cnt = 0;
         vector<vector<int>> vis(n, vector<int>(m, 0));
         for (int row = 0; row < n; row++) {
             for (int col = 0; col < m; col++) {
